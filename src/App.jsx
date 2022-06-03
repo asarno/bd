@@ -12,8 +12,7 @@ const App = () => {
 
   return (
     <div className='container'>
-      {hasBeenClicked && <Outro />}
-      <Intro onClick={onClick} />
+      {hasBeenClicked ? <Outro /> : <Intro onClick={onClick} />}
     </div>
   );
 };

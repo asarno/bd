@@ -10,14 +10,9 @@ body {
   height: 100vh;
 }
 
-video {
+img {
   cursor: pointer;
   outline: none;
-}
-
-#outro {
-  z-index: 2;
-  position: absolute;
 }
 
 .container {

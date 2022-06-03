@@ -1,14 +1,11 @@
 import React from 'react';
-import intro from '../res/intro.mp4';
+import intro from '../res/intro2.gif';
 
 export const Intro = ({ onClick }) => (
-  <video
+  <img
     src={intro}
     onClick={onClick}
-    autoPlay
-    playsInline
-    muted
     width='300'
-    type='video/mp4'
+    alt='intro'
   />
 );

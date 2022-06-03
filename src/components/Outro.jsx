@@ -1,5 +1,5 @@
 import { useCallback, useEffect} from 'react';
-import outro from '../res/outro.mp4';
+import outro from '../res/outro2.gif';
 
 export const Outro = () => {
   const onOutroEnd = useCallback(() => {
@@ -9,19 +9,16 @@ export const Outro = () => {
   }, []);
 
   useEffect(() => {
-    document.getElementById('outro').addEventListener('ended', onOutroEnd);
+    setTimeout(() => onOutroEnd(), 3000);
   }, [onOutroEnd]);
 
   return (
-    <video
+    <img
       src={outro}
       id='outro'
       onClick={onOutroEnd}
-      autoPlay
-      playsInline
-      muted
       width='300'
-      type='video/mp4'
+      alt='outro'
     />
   );
 };
