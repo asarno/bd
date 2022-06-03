@@ -15,12 +15,8 @@ video {
   cursor: pointer;
 }
 
-#intro {
-  position: absolute;
-}
-
 #outro {
-  z-index: 9;
+  z-index: 2;
   position: absolute;
 }
 

@@ -5,9 +5,15 @@ import outro from './res/outro.mp4';
 import './index.css';
 
 const Intro = ({ onClick }) => (
-  <video onClick={onClick} autoPlay muted width='300'>
-    <source src={intro} type='video/mp4' />
-  </video>
+  <video
+    src={intro}
+    onClick={onClick}
+    autoPlay
+    playsInline
+    muted
+    width='300'
+    type='video/mp4'
+  />
 );
 
 const Outro = () => {
@@ -22,9 +28,16 @@ const Outro = () => {
   }, [onOutroEnd]);
 
   return (
-    <video id='outro' autoPlay muted width='300'>
-      <source src={outro} type='video/mp4' />
-    </video>
+    <video
+      src={outro}
+      id='outro'
+      onClick={onOutroEnd}
+      autoPlay
+      playsInline
+      muted
+      width='300'
+      type='video/mp4'
+    />
   );
 };
 
