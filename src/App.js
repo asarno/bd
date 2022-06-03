@@ -12,7 +12,6 @@ const Intro = ({ onClick }) => (
 
 const Outro = () => {
   const onOutroEnd = useCallback(() => {
-    console.log('todo');
     const aTag = document.createElement('a');
     aTag.href = 'mailto:info@benigndelusion.com';
     aTag.click();
