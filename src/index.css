@@ -3,7 +3,6 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #d7d3ba;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,6 +12,7 @@ body {
 
 video {
   cursor: pointer;
+  outline: none;
 }
 
 #outro {
